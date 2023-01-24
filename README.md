@@ -19,3 +19,6 @@
 - reverse();
 - sort();
 - pop_back();
+
+
+**EXAMPLES ARE NOT TESTED FOR NOW!!**
