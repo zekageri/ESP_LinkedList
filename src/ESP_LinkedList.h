@@ -213,12 +213,14 @@ class ESP_LinkedList {
         add(data);
     }
 
-    // removes the last element from the list
-    void pop_back() {
+    // removes the last element from the list and returns it.
+    T pop_back() {
         if (count == 0) {
-            return;
+            return T();
         }
+        T removedData = get(count - 1);
         remove(count - 1);
+        return removedData;
     }
 
     // adds an element to the front of the list
@@ -226,12 +228,14 @@ class ESP_LinkedList {
         add(0, data);
     }
 
-    // removes the first element from the list
-    void pop_front() {
+    // removes the first element from the list and returns it.
+    T pop_front() {
         if (count == 0) {
-            return;
+            return T();
         }
+        T removedData = get(0);
         remove(0);
+        return removedData;
     }
 };
 
