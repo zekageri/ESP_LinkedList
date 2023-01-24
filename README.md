@@ -45,7 +45,7 @@ myList.push_back(7);
 myList.remove(1);
 ```
 
-*You can also use pop_back method to remove the last element of the list and pop_front to remove the first element of the list.*
+*You can also use pop_back method to remove the last element of the list and pop_front to remove the first element of the list. These two methods will return the removed element by value*
 
 ```c++
 myList.pop_back();
